@@ -1,0 +1,99 @@
+.Popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  height: 100%;
+  z-index: 5;
+  width: 100%;
+
+  background: rgba($color-black, 0.89);
+
+  &__Card {
+    max-width: 842px;
+    margin: 0 auto;
+    margin-top: 202px;
+    background-color: $color-white;
+    opacity: 1;
+    position: relative;
+  }
+
+  &__close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__description {
+    width: 50%;
+  }
+
+  &__title {
+    color: $color-gold;
+    font-size: 32px;
+    font-family: P052;
+    line-height: 32px;
+  }
+
+  &__subtitle {
+    margin-top: 8px;
+    font-size: 16px;
+    font-family: Lato;
+    line-height: 28px;
+    color: $color-gray;
+  }
+
+  &__policy,
+  &__link {
+    margin-top: 119px;
+    color: $color-gray;
+    font-size: 12px;
+    font-family: Roboto;
+    line-height: 15px;
+  }
+
+  &__link {
+    text-decoration: underline;
+
+    &:hover {
+      color: $color-gray;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 50%;
+  }
+
+  &__formItem {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__label {
+    color: $color-gray;
+    font-size: 12px;
+    font-family: Roboto;
+    line-height: 15px;
+  }
+
+  &__input{
+	height: 52px;
+	width: 100%;
+	border: 0;
+	background: $color-gray-2;
+	padding: 16px;
+	color: $color-black-4;
+  }
+}

@@ -244,5 +244,41 @@
         <div class="Footer__copyright">© Hotel Stavropol, 2020</div>
       </div>
     </footer>
+    <section class="Popup">
+        <div class="Card Popup__Card ">
+            <div class="Popup__close">
+                <img src="img/icons/close_24px.svg" alt="закрыть">
+            </div>
+            <div class="Popup__wrapper">
+                <div class="Popup__description">
+                    <div class="Popup__title">
+                        Оставьте заявку
+                    </div>
+                    <div class="Popup__subtitle">
+                        Скоро с вами свяжется администратор
+                    </div>
+                    <div class="Popup__policy">
+                        Нажимая на кнопку «Отправить», Вы <br> соглашаетесь с 
+                        <a href="" class="Popup__link">
+                             Политикой конфиденциальности
+                        </a>                       
+                    </div>
+                </div>
+                    <form action="" class="Popup__form">
+                        <div class="Popup__formItem">
+                            <label for="name" class="Popup__label">Ваше имя</label>
+                            <input type="text" name="name" placeholder="Иван" class="Popup__input">                           
+                        </div>
+                        <div class="Popup__formItem">
+                            <label for="phone" class="Popup__label">Ваш номер телефона</label>
+                            <input id="phone" type="tel" pattern="\d{3}\-\d{3}\-\d{4}"  class="Popup__input" data-mask="+7(999)999-99-99" placeholder="+7(999)999-99-99" />                          
+                        </div>
+                        <div class="Popup__button">
+                            <button class="Button Button_fill">Забронировать</button>
+                        </div>                        
+                    </form>
+            </div>
+        </div>
+    </section>
   </body>
 </html>
