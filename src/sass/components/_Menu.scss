@@ -1,0 +1,46 @@
+.Menu {
+  margin-top: 32px;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    list-style: none;
+  }
+
+  &__link {
+    position: relative;
+    color: $color-black;
+    font-size: 16px;
+    font-family: Lato;
+    line-height: 28px;
+
+    &:hover {
+      color: $color-gold;
+      text-decoration: none;
+
+      &::after {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 40px;
+        width: 100%;
+        height: 2px;
+        background-color: $color-gold;
+      }
+    }
+
+    &_active {
+      color: $color-gold;
+      &::after {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 40px;
+        width: 100%;
+        height: 2px;
+        background-color: $color-gold;
+      }
+    }
+  }
+}
