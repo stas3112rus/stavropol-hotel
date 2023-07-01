@@ -7,7 +7,7 @@
     <title>Hotel stavropol</title>
   </head>
   <body>
-    <div class="Header">
+    <section class="Header">
         <div class="Header__top container">
             <div class="Header__logo">
                 <a href="/">
@@ -46,7 +46,7 @@
             </div>
         </div>
         <div class="Menu container">
-             <ul class="Menu__list">
+            <ul class="Menu__list">
                 <li class="Menu__item">
                     <a href="#" class="Menu__link">Расчёт стоимости</a>
                 </li>
@@ -73,9 +73,82 @@
                 </li>
             </ul>
         </div>
-       
+    </section>
+    <section class="MainBlock container">
+        <h1 class="Title Title__main">
+            Рассчитайте стоимость вашего банкета
+        </h1>
+        
+        <!-- <div class="MainBlock__subtitleTop">
+            Ответьте на 5 вопросов и получите горку из шампанского в подарок
+        </div> -->
 
-        </div>
-    </div>
+        <div class="MainBlock__wrapper">
+             <div class="Content Content_middle">
+                <div class="Quiz">
+                    <form action="">                    
+                        <div class="Quiz__counter Quiz_padding">
+                            <div class="Quiz__counterTitle">
+                                Вопрос 1 из 5 
+                            </div>
+                            <div class="Quiz__Progress">
+                                <div class="Quiz__ProgressItem Quiz__ProgressItem_fill"></div>
+                                <div class="Quiz__ProgressItem "></div>
+                                <div class="Quiz__ProgressItem"></div>
+                                <div class="Quiz__ProgressItem"></div>
+                            </div>
+                        </div>       
+                        <div class="Quiz__question Quiz_padding">
+                            <div class="Quiz__questionTitle">
+                                Количество гостей
+                            </div>
+                            <ul class="Quiz__answers">
+                                <li class="Quiz__answersItem Quiz__answersItem_active">                            
+                                    <input type="radio" id="answer_1_1" name="answer_1" value="5-30" checked class="Quiz__radio">
+                                    <label for="answer_1_1" class="Quiz__label">5-30</label>
+                                </li>
+                                <li class="Quiz__answersItem">                            
+                                    <input type="radio" id="answer_1_2" name="answer_1" value="30-60" class="Quiz__radio">
+                                    <label for="answer_1_2" class="Quiz__label">30-60</label>
+                                </li>
+                                <li class="Quiz__answersItem">                            
+                                    <input type="radio" id="answer_1_3" name="answer_1" value="60-80" class="Quiz__radio">
+                                    <label for="answer_1_3" class="Quiz__label">60-80</label>
+                                </li>                           
+                                <li class="Quiz__answersItem">                            
+                                    <input type="radio" id="answer_1_4" name="answer_1" value="80-100" class="Quiz__radio">
+                                    <label for="answer_1_4" class="Quiz__label">80-100</label>
+                                </li>
+                                <li class="Quiz__answersItem">                            
+                                    <input type="radio" id="answer_1_5" name="answer_1" value="100-120" class="Quiz__radio">
+                                    <label for="answer_1_5" class="Quiz__label">100-120</label>
+                                </li>         
+                            </ul> 
+                        </div>
+                        <div class="Quiz__divider"></div>
+                        <div class="Quiz__buttons Quiz_padding">
+                            <button class="Button Button_fill">
+                            <span class="Button__text">Следующий вопрос</span>
+                            <span class="Button__arrow">
+                                <img src="img/icons/arrow.svg" alt="Следующий вопрос">
+                            </span>
+                        </button>
+                        </div>
+                        
+                    </form>
+                </div>
+             </div>
+            <div class="Content Content_small">
+                <div class="CallToAction">
+                    <div class="MainBlock__subtitleInner CallToAction__subtitle">
+                        Ответьте на 5 вопросов и получите горку из шампанского в подарок
+                    </div>
+                    <div class="CallToAction__champaign">
+                        <img src="img/champagne.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </section>   
   </body>
 </html>

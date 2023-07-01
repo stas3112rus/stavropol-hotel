@@ -1,0 +1,18 @@
+.Button {
+  display: flex;
+  gap: 16px;
+  color: $color-gold;
+  background: $color-white;
+  border-radius: 4px;
+  border: 2px solid $color-gold;
+  padding: 14px 32px;
+  font-size: 15px;
+  font-family: Roboto;
+  line-height: 20px;
+
+  &_fill,
+  &_fill span {
+    color: $color-white;
+    background: $color-gold;
+  }
+}

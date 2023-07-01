@@ -1,0 +1,13 @@
+.Content {
+  border-radius: 16px;
+  background: $color-light-gray;
+  width: 100%;
+
+  &_middle {
+    max-width: 1588px;
+  }
+
+  &_small {
+    max-width: 650px;
+  }
+}

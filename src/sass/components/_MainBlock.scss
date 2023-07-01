@@ -1,0 +1,10 @@
+.MainBlock{
+	margin-top: 24px;
+
+	&__wrapper{
+		margin-top: 13px;
+		display: flex;
+		justify-content: space-between;
+		gap: 20px;
+	}
+}

@@ -1,0 +1,25 @@
+.CallToAction{
+	background: no-repeat url("../img/liner-gradient.svg");
+	min-height: 369px;
+	background-position: top right;
+	position: relative;
+
+	&__champaign{
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		right: 0;
+	}
+
+	&__subtitle{
+		position: absolute;
+		z-index: 2;
+		max-width: 476px;
+		color: $color-black;
+		font-size: 24px;
+		font-family: Lato;
+		line-height: 32px;
+		bottom: 32px;
+		left: 40px;
+	}
+}
