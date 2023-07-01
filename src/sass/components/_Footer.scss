@@ -1,0 +1,43 @@
+.Footer {
+  margin-top: 32px;
+
+  background: $color-black-3;
+  border-radius: 20px 20px 0px 0px;
+
+  &__wrapper {
+    padding-top: 48px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__copyright {
+    margin-top: 41px;
+    font-size: 14px;
+    font-family: Lato;
+    line-height: 20px;
+    color: $color-white;
+  }
+
+  &__socialTitle {
+    color: $color-white;
+    font-size: 20px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  &__buttons {
+    margin-top: 16px;
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+  }
+
+  &__button {
+    border-radius: 16px;
+    background: $color-gray;
+    width: 52px;
+    height: 52px;
+  }
+}

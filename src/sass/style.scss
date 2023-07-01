@@ -11,8 +11,10 @@
 }
 
 .container {
+  position: relative;
   max-width: 1588px;
   margin: 0 auto;
+  height: 100%;
 }
 
 @import "components/Header";
@@ -26,3 +28,4 @@
 @import "components/RentHall";
 @import "components/Tabs";
 @import "components/Card";
+@import "components/Footer";
