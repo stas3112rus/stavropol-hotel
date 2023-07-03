@@ -26,7 +26,7 @@
           </div>
           <div class="Header__social">
             <a href="htts://t.me/778899" class="Header__socialLink">
-              <button class="Header__button">
+              <button class="ButtonSocial ButtonSocial_medium ButtonSocial_gold">
                 <img
                   src="img/icons/Telegram_20px.svg"
                   alt="telegram Hotel stavropol"
@@ -34,7 +34,7 @@
               </button>
             </a>
             <a href="https://wa.me/7XXXXXXXXXX" class="Header__socialLink">
-              <button class="Header__button">
+              <button class="ButtonSocial ButtonSocial_medium ButtonSocial_gold">
                 <img
                   src="img/icons/WhatsApp.svg"
                   alt="WhatsApp Hotel stavropol"
@@ -50,7 +50,7 @@
           </div>
         </div>
       </div>
-      <div class="Menu container">
+      <nav class="Menu container">
         <ul class="Menu__list">
           <li class="Menu__item">
             <a href="#" class="Menu__link">Расчёт стоимости</a>
@@ -77,7 +77,7 @@
             <a href="#" class="Menu__link">Контакты</a>
           </li>
         </ul>
-      </div>
+      </nav>
     </section>
     <section class="MainBlock container">
       <h1 class="Title Title__main">Рассчитайте стоимость вашего банкета</h1>
@@ -109,7 +109,7 @@
                       name="answer_1"
                       value="5-30"
                       checked
-                      class="Quiz__radio"
+                      class="InputRadio"
                     />
                     <label for="answer_1_1" class="Quiz__label">5-30</label>
                   </li>
@@ -119,7 +119,7 @@
                       id="answer_1_2"
                       name="answer_1"
                       value="30-60"
-                      class="Quiz__radio"
+                      class="InputRadio"
                     />
                     <label for="answer_1_2" class="Quiz__label">30-60</label>
                   </li>
@@ -129,7 +129,7 @@
                       id="answer_1_3"
                       name="answer_1"
                       value="60-80"
-                      class="Quiz__radio"
+                      class="InputRadio"
                     />
                     <label for="answer_1_3" class="Quiz__label">60-80</label>
                   </li>
@@ -139,7 +139,7 @@
                       id="answer_1_4"
                       name="answer_1"
                       value="80-100"
-                      class="Quiz__radio"
+                      class="InputRadio"
                     />
                     <label for="answer_1_4" class="Quiz__label">80-100</label>
                   </li>
@@ -149,7 +149,7 @@
                       id="answer_1_5"
                       name="answer_1"
                       value="100-120"
-                      class="Quiz__radio"
+                      class="InputRadio"
                     />
                     <label for="answer_1_5" class="Quiz__label">100-120</label>
                   </li>
@@ -224,17 +224,17 @@
             <div class="Footer__socialTitle">Мы в соц. сетях</div>
             <div class="Footer__buttons">
               <a href="#" class="Footer__socialLink">
-                <button class="Footer__button">
+                <button class="ButtonSocial ButtonSocial_large ButtonSocial_gray">
                   <img src="img/icons/FB.svg" alt="Facebook" />
                 </button>
               </a>
               <a href="#" class="Footer__socialLink">
-                <button class="Footer__button">
+                <button class="ButtonSocial ButtonSocial_large ButtonSocial_gray">
                   <img src="img/icons/WhatsApp.svg" alt="WhatsApp" />
                 </button>
               </a>
               <a href="#" class="Footer__socialLink">
-                <button class="Footer__button">
+                <button class="ButtonSocial ButtonSocial_large ButtonSocial_gray">
                   <img src="img/icons/VK.svg" alt="Вконтакте" />
                 </button>
               </a>
@@ -267,11 +267,11 @@
                     <form action="" class="Popup__form">
                         <div class="Popup__formItem">
                             <label for="name" class="Popup__label">Ваше имя</label>
-                            <input type="text" name="name" placeholder="Иван" class="Popup__input">                           
+                            <input type="text" name="name" placeholder="Иван" class="InputText">                           
                         </div>
                         <div class="Popup__formItem">
                             <label for="phone" class="Popup__label">Ваш номер телефона</label>
-                            <input id="phone" type="tel" pattern="\d{3}\-\d{3}\-\d{4}"  class="Popup__input" data-mask="+7(999)999-99-99" placeholder="+7(999)999-99-99" />                          
+                            <input id="phone" type="tel" pattern="\d{3}\-\d{3}\-\d{4}"  class="InputText" data-mask="+7(999)999-99-99" placeholder="+7(999)999-99-99" />                          
                         </div>
                         <div class="Popup__button">
                             <button class="Button Button_fill">Забронировать</button>

@@ -1,0 +1,23 @@
+.ButtonSocial {
+  border: 0;
+
+  &_large {
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+  }
+
+  &_medium {
+    width: 48px;
+    height: 48px;
+    border-radius: 6px;
+  }
+
+  &_gold {
+    background-color: $color-gold;
+  }
+
+  &_gray {
+    background: $color-gray;
+  }
+}

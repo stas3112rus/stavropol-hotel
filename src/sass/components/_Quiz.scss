@@ -47,21 +47,21 @@
     gap: 16px;
   }
   &__answersItem {
+    cursor: pointer;
     border-radius: 4px;
     background: $color-white;
     padding: 12px;
     display: flex;
     align-items: center;
     gap: 16px;
-    cursor: pointer;
 
     &_active {
       border: 1px solid $color-gold;
     }
   }
 
-  &__label,
-  &__radio {
+  &__label {
+    cursor: pointer;
     display: flex;
     align-items: center;
     padding: 0;
@@ -73,22 +73,6 @@
     font-size: 16px;
     font-family: Lato;
     line-height: 28px;
-  }
-
-  &__radio {
-    width: 24px;
-    height: 24px;
-    border: 2px solid $color-gray;
-    border-radius: 50%;
-
-    &:checked {
-      appearance: none;
-      -webkit-appearance: none;
-      border-radius: 50%;
-      background: $color-gold;
-      border: 6px solid $color-white;
-      box-shadow: 0 0 0 1px $color-gold;
-    }
   }
 
   &__divider {

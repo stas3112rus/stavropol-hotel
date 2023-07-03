@@ -14,7 +14,6 @@
   position: relative;
   max-width: 1588px;
   margin: 0 auto;
-  height: 100%;
 }
 
 @import "components/Header";
@@ -23,10 +22,13 @@
 @import "components/Title";
 @import "components/Content";
 @import "components/Quiz";
-@import "components/Button";
+@import "components/buttons/Button";
+@import "components/buttons/ButtonSocial";
 @import "components/CallToAction";
 @import "components/RentHall";
 @import "components/Tabs";
 @import "components/Card";
 @import "components/Footer";
 @import "components/Popup";
+@import "components/inputs/InputRadio";
+@import "components/inputs/InputText";
