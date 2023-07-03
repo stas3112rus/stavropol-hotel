@@ -19,7 +19,7 @@
   &__card {
     max-width: 842px;
     margin: 0 auto;
-    margin-top: 202px;
+    margin-top: 10px;
     background-color: $color-white;
     opacity: 1;
     position: relative;
@@ -35,10 +35,11 @@
   &__wrapper {
     display: flex;
     gap: 20px;
+    flex-direction: column;
   }
 
   &__description {
-    width: 50%;
+    width: 100%;
   }
 
   &__title {
@@ -58,14 +59,13 @@
 
   &__policy,
   &__link {
-    margin-top: 119px;
     color: $color-gray;
     font-size: 12px;
     font-family: Roboto;
     line-height: 15px;
   }
 
-  &__link {
+  &__pol &__link {
     text-decoration: underline;
 
     &:hover {
@@ -77,7 +77,7 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-    width: 50%;
+    width: 100%;
   }
 
   &__formItem {
@@ -91,5 +91,23 @@
     font-size: 12px;
     font-family: Roboto;
     line-height: 15px;
+  }
+}
+
+@media (min-width: 700px) {
+  .Popup {
+    &__card {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &__wrapper {
+      flex-direction: row;
+    }
+
+    &__description,
+    &__form {
+      width: 50%;
+    }
   }
 }
