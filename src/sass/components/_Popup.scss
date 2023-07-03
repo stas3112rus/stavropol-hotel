@@ -1,4 +1,5 @@
 .Popup {
+  display: none;
   position: fixed;
   left: 0;
   top: 0;
@@ -11,7 +12,11 @@
 
   background: rgba($color-black, 0.89);
 
-  &__Card {
+  &_active {
+    display: block;
+  }
+
+  &__card {
     max-width: 842px;
     margin: 0 auto;
     margin-top: 202px;

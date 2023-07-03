@@ -53,6 +53,7 @@
     display: flex;
     align-items: center;
     gap: 16px;
+    cursor: pointer;
 
     &_active {
       border: 1px solid $color-gold;
