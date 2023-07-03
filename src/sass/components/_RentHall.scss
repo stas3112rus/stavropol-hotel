@@ -1,9 +1,18 @@
 .RentHall {
-  margin-top: 32px;
+  margin-top: 24px;
+
+  &__Title {
+    text-align: center;
+  }
 
   &__wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__img {
+    width: 118px;
   }
 
   &__plan {
@@ -13,6 +22,10 @@
     padding: 11px;
   }
 
+  &__tabs {
+    margin-top: 32px;
+  }
+
   &__description {
     padding: 56px;
   }
@@ -20,14 +33,14 @@
   &__table {
     margin-top: 24px;
     display: grid;
-    grid-template-columns: 160px 1fr;
+    grid-template-columns: 100px 1fr;
   }
 
   &__td {
     padding: 8px;
-    font-size: 16px;
+    font-size: 14px;
     font-family: Lato;
-    line-height: 28px;
+    line-height: 20px;
     border-bottom: 2px solid $color-gray-2;
 
     &_definition {
@@ -38,6 +51,46 @@
   &__buttons {
     margin-top: 48px;
     display: flex;
+    flex-direction: column;
     gap: 16px;
+  }
+}
+
+@media (min-width: 800px) {
+  .RentHall {
+    margin-top: 32px;
+
+    &__Title {
+      text-align: left;
+    }
+
+    &__wrapper {
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+    &__table {
+      grid-template-columns: 160px 1fr;
+    }
+
+    &__img {
+      width: 180px;
+    }
+
+    &__buttons {
+      flex-direction: row;
+    }
+
+    &__td {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+}
+
+@media (min-width: 1250px) {
+  .RentHall {
+    &__img {
+      width: auto;
+    }
   }
 }

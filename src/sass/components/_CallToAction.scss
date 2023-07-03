@@ -4,6 +4,10 @@
   background-position: top right;
   position: relative;
 
+  &_hidden {
+    display: none;
+  }
+
   &__champaign {
     position: absolute;
     z-index: 1;
@@ -21,5 +25,36 @@
     line-height: 32px;
     bottom: 32px;
     left: 40px;
+  }
+
+  &__startQuiz {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    z-index: 5;
+  }
+}
+
+@media (min-width: 800px) {
+  .CallToAction {
+    &__startQuiz {
+      display: none;
+    }
+
+    &__subtitle {
+      max-width: 280px;
+      font-size: 17px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media (min-width: 1250px) {
+  .CallToAction {
+    &__subtitle {
+      max-width: 476px;
+      font-size: 24px;
+      line-height: 32px;
+    }
   }
 }

@@ -1,15 +1,29 @@
 .Title {
   &__main {
     color: $color-black;
-    font-size: 40px;
+    font-size: 20px;
     font-family: P052;
     font-weight: 700;
-    line-height: 48px;
+    line-height: 28px;
   }
 
   &__subtitle {
-    font-size: 32px;
+    font-size: 20px;
     font-family: P052;
-    line-height: 32px;
+    line-height: 28px;
+  }
+}
+
+@media (min-width: 700px) {
+  .Title {
+    &__main {
+      font-size: 40px;
+      line-height: 48px;
+    }
+
+    &__subtitle {
+      font-size: 32px;
+      line-height: 32px;
+    }
   }
 }

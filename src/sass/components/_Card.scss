@@ -2,5 +2,11 @@
   border-radius: 16px;
   background: $color-white;
   box-shadow: 0px 8px 16px 0px rgba(34, 35, 36, 0.1);
-  padding: 40px;
+  padding: 24px;
+}
+
+@media (min-width: 800px) {
+  .Card {
+    padding: 24px 16px;
+  }
 }

@@ -1,5 +1,6 @@
 .Footer {
   margin-top: 32px;
+  padding: 40px 36px 20px 36px;
 
   background: $color-black-3;
   border-radius: 20px 20px 0px 0px;
@@ -8,6 +9,8 @@
     padding-top: 48px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
   }
 
   &__copyright {
@@ -32,5 +35,11 @@
     display: flex;
     justify-content: left;
     gap: 20px;
+  }
+}
+
+@media (min-width: 700px) {
+  .Footer {
+    padding-bottom: 0;
   }
 }

@@ -7,7 +7,7 @@
     <title>Hotel stavropol</title>
   </head>
   <body>
-    <section class="Header">
+     <section class="Header">
       <div class="Header__top container">
         <div class="Header__logo">
           <div class="Header__burger">
@@ -84,8 +84,8 @@
           </li>
         </ul>
       </nav>
-    </section>
-    <!-- <section class="MainBlock container">
+    </section> 
+     <section class="MainBlock container">
       <h1 class="Title Title__main">Рассчитайте стоимость вашего банкета</h1>
 
        <div class="MainBlock__subtitleTop">
@@ -93,7 +93,7 @@
         </div>
 
       <div class="MainBlock__wrapper">
-        <div class="Content Content_middle">
+        <div class="Content Content_middle MainBlock__quiz">
           <div class="Quiz">
             <form action="">
               <div class="Quiz__counter Quiz_padding">
@@ -173,10 +173,18 @@
             </form>
           </div>
         </div>
-        <div class="Content Content_small">
+        <div class="Content Content_small MainBlock__callToAction">
           <div class="CallToAction">
             <div class="MainBlock__subtitleInner CallToAction__subtitle">
               Ответьте на 5 вопросов и получите горку из шампанского в подарок
+            </div>
+            <div class="CallToAction__startQuiz">
+               <button class="Button Button_fill CallToAction__btnStartQuiz">
+                  <span class="Button__text">Начать опрос</span>
+                  <span class="Button__arrow">
+                    <img src="img/icons/arrow.svg" alt="Начать опрос" />
+                  </span>
+                </button>
             </div>
             <div class="CallToAction__champaign">
               <img src="img/champagne.png" alt="" />
@@ -184,16 +192,16 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> 
     <section class="RentHall container">
-      <h2 class="Title Title__main">Схемы залов</h2>
-      <div class="Tabs">
+      <h2 class="Title Title__main RentHall__Title">Схемы залов</h2>
+      <div class="Tabs RentHall__tabs">
         <div class="Tabs__Item Tabs__Item_active">Зал Первый</div>
         <div class="Tabs__Item">Зал Второй</div>
       </div>
       <div class="Content Content_withTab RentHall__wrapper">
         <div class="RentHall__plan">
-          <img src="img/plan.png" alt="План рассадки зал 1" />
+          <img src="img/plan.png" alt="План рассадки зал 1"  class="RentHall__img"/>
         </div>
         <div class="RentHall__description">
           <div class="Card">
@@ -217,7 +225,8 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> 
+    
     <footer class="Footer">
       <div class="container">
         <div class="Footer__wrapper">
@@ -285,11 +294,12 @@
                     </form>
             </div>
         </div>
-    </section> -->
-    <!-- <script src="js/popup.js"></script>
-    <script src="js/quizAnswers.js"></script> -->
+    </section> 
+    <script src="js/popup.js"></script>
+    <script src="js/quizAnswers.js"></script> 
     <script src="js/navBarOpen.js"></script>
-
+   
+    <script src="js/startQuiz.js"></script>
 
   </body>
 </html>

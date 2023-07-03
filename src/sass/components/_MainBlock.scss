@@ -1,10 +1,55 @@
 .MainBlock {
   margin-top: 24px;
+  padding: 24px 16px;
+
+  &__subtitleTop {
+    font-size: 14px;
+    font-family: Lato;
+    line-height: 20px;
+  }
+
+  &__subtitleInner {
+    display: none;
+  }
 
   &__wrapper {
-    margin-top: 13px;
+    margin-top: 32px;
     display: flex;
     justify-content: space-between;
     gap: 20px;
+  }
+
+  &__quiz {
+    margin: 0 auto;
+    display: none;
+
+    &_open {
+      display: block;
+    }
+  }
+
+  &__callToAction {
+    margin: 0 auto;
+
+    &_hidden {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .MainBlock {
+    &__wrapper {
+      margin-top: 26px;
+    }
+
+    &__subtitleTop {
+      display: none;
+    }
+
+    &__quiz,
+    &__subtitleInner {
+      display: block;
+    }
   }
 }
