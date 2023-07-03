@@ -85,6 +85,12 @@
     }
   }
 
+  &__buttonCallLink {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
   &__callBack {
     color: $color-gold;
     font-size: 15px;
