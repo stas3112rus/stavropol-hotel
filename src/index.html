@@ -314,16 +314,19 @@
     <section class="RentHall container">
       <h2 class="Title Title__main RentHall__Title">Схемы залов</h2>
       <div class="Tabs RentHall__tabs">
-        <div class="Tabs__Item Tabs__Item_active">Зал Первый</div>
-        <div class="Tabs__Item">Зал Второй</div>
+        <div class="Tabs__Item Tabs__Item_active" data-chooseHall="1">Зал Первый</div>
+        <div class="Tabs__Item" data-chooseHall="2">Зал Второй</div>
       </div>
       <div class="Content Content_withTab RentHall__wrapper">
-        <div class="RentHall__plan">
+        <div class="RentHall__plan" data-currentHall="1">
           <img
             src="img/plan.png"
             alt="План рассадки зал 1"
             class="RentHall__img"
           />
+        </div>
+        <div class="RentHall__plan RentHall__plan_hidden" data-currentHall="2">
+          Картинка для второго зала
         </div>
         <div class="RentHall__description">
           <div class="Card">
@@ -441,5 +444,6 @@
     <script src="js/navBarOpen.js"></script>
     <script src="js/startQuiz.js"></script>
     <script src="js/quiz.js"></script>
+    <script src="js/rentHallPlan.js"></script>
   </body>
 </html>

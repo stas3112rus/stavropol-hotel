@@ -20,6 +20,10 @@
     display: flex;
     justify-content: center;
     padding: 11px;
+
+    &_hidden{
+      display: none;
+    }
   }
 
   &__tabs {
