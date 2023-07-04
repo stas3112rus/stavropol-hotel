@@ -103,9 +103,10 @@
           <div class="Quiz">
             <form action="">
               <div class="Quiz__counter Quiz_padding">
-                <div class="Quiz__counterTitle">Вопрос 1 из 5</div>
+                <div class="Quiz__counterTitle">Вопрос <span class="Quiz__question_number">1</span> из 5</div>
                 <div class="Quiz__Progress">
                   <div class="Quiz__ProgressItem Quiz__ProgressItem_fill"></div>
+                  <div class="Quiz__ProgressItem"></div>
                   <div class="Quiz__ProgressItem"></div>
                   <div class="Quiz__ProgressItem"></div>
                   <div class="Quiz__ProgressItem"></div>
@@ -167,13 +168,120 @@
                   </li>
                 </ul>
               </div>
+              <div class="Quiz__question Quiz_padding Quiz__question_hidden">
+                <div class="Quiz__questionTitle">Вопрос 2</div>
+                <ul class="Quiz__answers">
+                  <li class="Quiz__answersItem Quiz__answersItem_active">
+                    <input
+                      type="radio"
+                      id="answer_2_1"
+                      name="answer_2"
+                      value="1"
+                      checked
+                      class="InputRadio"
+                    />
+                    <label for="answer_2_1" class="Quiz__label">1</label>
+                  </li>
+                  <li class="Quiz__answersItem">
+                    <input
+                      type="radio"
+                      id="answer_2_2"
+                      name="answer_2"
+                      value="2"
+                      class="InputRadio"
+                    />
+                    <label for="answer_2_2" class="Quiz__label">2</label>
+                  </li>                  
+                </ul>
+              </div>
+              <div class="Quiz__question Quiz_padding Quiz__question_hidden">
+                <div class="Quiz__questionTitle">Вопрос 3</div>
+                <ul class="Quiz__answers">
+                  <li class="Quiz__answersItem Quiz__answersItem_active">
+                    <input
+                      type="radio"
+                      id="answer_3_1"
+                      name="answer_3"
+                      value="1"
+                      checked
+                      class="InputRadio"
+                    />
+                    <label for="answer_3_1" class="Quiz__label">1</label>
+                  </li>
+                  <li class="Quiz__answersItem">
+                    <input
+                      type="radio"
+                      id="answer_3_2"
+                      name="answer_3"
+                      value="2"
+                      class="InputRadio"
+                    />
+                    <label for="answer_2_2" class="Quiz__label">2</label>
+                  </li>                  
+                </ul>
+              </div>
+              <div class="Quiz__question Quiz_padding Quiz__question_hidden">
+                <div class="Quiz__questionTitle">Вопрос 4</div>
+                <ul class="Quiz__answers">
+                  <li class="Quiz__answersItem Quiz__answersItem_active">
+                    <input
+                      type="radio"
+                      id="answer_4_1"
+                      name="answer_4"
+                      value="1"
+                      checked
+                      class="InputRadio"
+                    />
+                    <label for="answer_4_1" class="Quiz__label">1</label>
+                  </li>
+                  <li class="Quiz__answersItem">
+                    <input
+                      type="radio"
+                      id="answer_4_2"
+                      name="answer_4"
+                      value="2"
+                      class="InputRadio"
+                    />
+                    <label for="answer_4_2" class="Quiz__label">2</label>
+                  </li>                  
+                </ul>
+              </div>
+              <div class="Quiz__question Quiz_padding Quiz__question_hidden">
+                <div class="Quiz__questionTitle">Вопрос 5</div>
+                <ul class="Quiz__answers">
+                  <li class="Quiz__answersItem Quiz__answersItem_active">
+                    <input
+                      type="radio"
+                      id="answer_5_1"
+                      name="answer_5"
+                      value="1"
+                      checked
+                      class="InputRadio"
+                    />
+                    <label for="answer_5_1" class="Quiz__label">1</label>
+                  </li>
+                  <li class="Quiz__answersItem">
+                    <input
+                      type="radio"
+                      id="answer_5_2"
+                      name="answer_5"
+                      value="2"
+                      class="InputRadio"
+                    />
+                    <label for="answer_5_2" class="Quiz__label">2</label>
+                  </li>                  
+                </ul>
+              </div>
               <div class="Quiz__divider"></div>
               <div class="Quiz__buttons Quiz_padding">
-                <button class="Button Button_fill">
+                <button class="Button Button_fill Quiz__buttonNextQuestion">
                   <span class="Button__text">Следующий вопрос</span>
                   <span class="Button__arrow">
                     <img src="img/icons/arrow.svg" alt="Следующий вопрос" />
                   </span>
+                </button>
+                <button class="Button Button_fill Quiz__buttonSend Quiz__button_hidden">
+                  Отправить ответы
                 </button>
               </div>
             </form>
@@ -327,7 +435,7 @@
     <script src="js/popup.js"></script>
     <script src="js/quizAnswers.js"></script>
     <script src="js/navBarOpen.js"></script>
-
     <script src="js/startQuiz.js"></script>
+     <script src="js/quiz.js"></script>
   </body>
 </html>

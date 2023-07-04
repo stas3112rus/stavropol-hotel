@@ -30,6 +30,10 @@
 
   &__question {
     margin-top: 32px;
+
+    &_hidden {
+      display: none;
+    }
   }
 
   &__questionTitle {
@@ -84,5 +88,11 @@
 
   &__buttons {
     margin-top: 31px;
+  }
+
+  &__button {
+    &_hidden {
+      display: none !important;
+    }
   }
 }
